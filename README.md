@@ -1,6 +1,8 @@
 memcache
 =========
 
+[![Build Status](https://travis-ci.org/jebovic/ansible-memcache.svg?branch=master)](https://travis-ci.org/jebovic/ansible-memcache)
+
 Install and configure memcache
 
 Role Variables
