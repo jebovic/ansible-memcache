@@ -1,7 +1,7 @@
 memcache
 =========
 
-[![Build Status](https://travis-ci.org/jebovic/ansible-memcache.svg?branch=master)](https://travis-ci.org/jebovic/ansible-memcache)
+[![Build Status](https://travis-ci.org/jebovic/ansible-memcache.svg?branch=master)](https://travis-ci.org/jebovic/ansible-memcache) [![Ansible Galaxy](https://img.shields.io/badge/galaxy-jebovic.memcache-blue.svg?style=flat)](https://galaxy.ansible.com/jebovic/memcache)
 
 Install and configure memcache
 
