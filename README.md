@@ -8,7 +8,7 @@ Install and configure memcache
 Role Variables
 --------------
 
-```
+```yaml
 # Memcached basic configuration
 memcache_log_file: /var/log/memcached.log
 memcache_memory_size: 64
@@ -21,11 +21,16 @@ memcache_max_connections: 1024
 Example Playbook
 ----------------
 
+```yaml
+- hosts: servers
+  roles:
+     - { role: jebovic.memcache }
 ```
-    - hosts: servers
-      roles:
-         - { role: jebovic.memcache }
-```
+
+Tags
+----
+
+* memcache_config : only update config and restart service
 
 License
 -------

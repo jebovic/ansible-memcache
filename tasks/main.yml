@@ -20,6 +20,7 @@
     - memcached.conf
   notify:
     - restart memcached
+  tags: memcache_config
 
 - name: service start
   service:
