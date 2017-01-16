@@ -7,6 +7,15 @@ Install and configure memcache
 
 This role is a part of my [OPS project](https://github.com/jebovic/ops), follow this link to see it in action. OPS provides a lot of stuff, like a vagrant file for development VMs, playbooks for roles orchestration, inventory files, examples for roles configuration, ansible configuration file, and many more.
 
+Compatibility
+-------------
+
+Tested and approved on :
+
+* Debian jessie (8+)
+* Ubuntu Trusty (14.04 LTS)
+* Ubuntu Xenial (16.04 LTS)
+
 Role Variables
 --------------
 
@@ -27,6 +36,16 @@ Example Playbook
 - hosts: servers
   roles:
      - { role: jebovic.memcache }
+```
+
+Example : config
+----------------
+
+```yaml
+# Increase memcache memory limit to 512M
+memcache_memory_size: 512
+# Memcache listen server ip, and not only localhost
+memcache_listen_address: "{{ ansible_host }}"
 ```
 
 Tags
